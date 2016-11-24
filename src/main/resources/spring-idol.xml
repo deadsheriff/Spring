@@ -18,4 +18,11 @@
           class="com.springtutorial.springidol.Auditorium"
           init-method="turnOnLights"
           destroy-method="turnOffLights"/>
+    <bean id="saxophone"
+          class="com.springtutorial.springidol.Saxophone" />
+    <bean id="kenny"
+          class="com.springtutorial.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells" />
+        <property name="instrument" ref="saxophone" />
+    </bean>
 </beans>
