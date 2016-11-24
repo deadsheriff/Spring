@@ -14,4 +14,8 @@
           factory-method="getInstance" />
     <bean id="ticket"
           class="com.springtutorial.springidol.Ticket" scope="prototype" />
+    <bean id="auditorium"
+          class="com.springtutorial.springidol.Auditorium"
+          init-method="turnOnLights"
+          destroy-method="turnOffLights"/>
 </beans>
