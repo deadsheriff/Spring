@@ -11,5 +11,7 @@ public class Main {
         performer.Perform();
         performer = (Performer) ctx.getBean("kenny");
         performer.Perform();
+        performer = (Performer) ctx.getBean("carl");
+        performer.Perform();
     }
 }

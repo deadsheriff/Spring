@@ -31,7 +31,7 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
             p:instrument-ref = "saxophone"
           />
     <bean id="hank"
-          class="com.springinaction.springidol.OneManBand">
+          class="com.springtutorial.springidol.OneManBand">
         <property name="instruments">
             <list>
                 <ref bean="saxophone" />
@@ -39,5 +39,10 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
                 <ref bean="piano" />
             </list>
         </property>
+    </bean>
+    <bean id="carl"
+          class="com.springtutorial.springidol.Instrumentalist">
+        <property name="song" value="#{kenny.song}" />
+        <property name="instrument" ref="saxophone" />
     </bean>
 </beans>
