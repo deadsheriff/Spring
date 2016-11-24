@@ -12,4 +12,6 @@
     <bean id="sonnet" class="com.springtutorial.springidol.Sonnet" />
     <bean id="theStage" class="com.springtutorial.springidol.Stage"
           factory-method="getInstance" />
+    <bean id="ticket"
+          class="com.springtutorial.springidol.Ticket" scope="prototype" />
 </beans>
